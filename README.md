@@ -12,12 +12,12 @@
 #### darktea
 
 - http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion
-- limitation: http 500 errors (internal server error)
+- limitation: http 500 errors (internal server error) with high frequency
 
 #### human rights tech
 
 - http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion
-- limitation: http 502 errors (bad gateway)
+- limitation: http 502 errors (bad gateway) with low frequency &rarr; wait and retry
 
 #### forgejo
 
