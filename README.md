@@ -57,6 +57,11 @@
 - https://github.com/gogs/gogs
 - written in: Go
 
+### based on sourcehut
+
+- https://sr.ht/~sircmpwn/sourcehut/
+- written in: Go, Python
+
 ### based on radicle
 
 - https://github.com/radicle-dev/radicle-interface
