@@ -35,6 +35,7 @@
 - http://2crftbzxbcoqolvzreaaeyrod5qwycayef55gxgzgfcpqlaxrnh3kkqd.onion
 - clearnet: https://git.dotya.ml
 - limitation: signup is broken.
+- via https://dotya.ml/onions/
 
 ### based on forgejo
 
