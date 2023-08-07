@@ -20,11 +20,6 @@
 - http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion
 - limitation: http 502 errors (bad gateway) with low frequency &rarr; wait and retry
 
-#### forgejo
-
-- http://qt5vr747phiq55ubqip4hflmpygzl374mum2zbyqdxg6sqbngmzlqhid.onion
-- limitation: signup is broken. creating an account fails with "You cannot register with your email address."
-
 #### open privacy gitea
 
 - http://gitopcybr57ris5iuivfz62gdwe2qk5pinnt2wplpwzicaybw73stjqd.onion
@@ -34,6 +29,19 @@
 
 - http://git.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion
 - limitation: signup is broken. confirmation email is not sent. the signup page says "A new confirmation email has been sent to xxx@xxx.onion. Please check your inbox within the next 3 hours to complete the registration process." but the confirmation email never arrives.
+
+### based on forgejo
+
+- forgejo is a FOSS fork of gitea
+- https://forgejo.org/faq/
+   - Why was Forgejo created?
+      - In October 2022 the domains and trademark of Gitea were transferred to a for-profit company without knowledge or approval of the community. Despite writing an open letter, the takeover was later confirmed. Forgejo was created as an alternative providing a software forge whose governance further the interest of the general public.
+      - Forgejo was initially presented as a “soft-fork” of Gitea, similar to LineageOS, a community led distribution based on Android from Google. It is however better described as a product built on top of Gitea, Git and hundreds of other Free Software projects. Forgejo also has its own documentation, infrastructure, release pipeline, CI infrastructure, distribution channels etc.
+
+#### qt5vr747phiq55ubqip4hflmpygzl374mum2zbyqdxg6sqbngmzlqhid
+
+- http://qt5vr747phiq55ubqip4hflmpygzl374mum2zbyqdxg6sqbngmzlqhid.onion
+- limitation: signup is broken. creating an account fails with "You cannot register with your email address."
 
 ### based on cgit
 
