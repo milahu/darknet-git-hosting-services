@@ -37,6 +37,11 @@
 - limitation: signup is broken.
 - via https://dotya.ml/onions/
 
+#### adhoccode
+
+- http://adhoccode34gsycq72umva3hcs44lajzvcpsjsn3ezpcibwc25cujkqd.onion
+- limitation: cannot create repositories: "The owner has already reached the limit of 0 repositories."
+
 ### based on forgejo
 
 - forgejo is a FOSS fork of gitea
