@@ -28,7 +28,7 @@
 #### project segfault git
 
 - http://git.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion
-- limitation: signup is broken. confirmation email is not sent. the signup page says "A new confirmation email has been sent to xxx@xxx.onion. Please check your inbox within the next 3 hours to complete the registration process." but the confirmation email never arrives.
+- limitation: signup is broken. confirmation email is not sent. the signup page says "A new confirmation email has been sent to `xxx@xxx.onion`. Please check your inbox within the next 3 hours to complete the registration process." but the confirmation email never arrives.
 
 ### based on forgejo
 
