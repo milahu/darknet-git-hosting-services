@@ -79,6 +79,13 @@
 - https://sr.ht/~sircmpwn/sourcehut/
 - written in: Go, Python
 
+### based on gerrit
+
+- A web-based code review system for projects using Git
+- https://www.gerritcodereview.com/
+- https://gerrit.googlesource.com/gerrit/
+- written in: Java
+
 ### based on radicle
 
 - https://github.com/radicle-dev/radicle-interface
