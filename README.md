@@ -77,3 +77,10 @@
 - https://github.com/radicle-dev/radicle-interface
 - https://app.radicle.xyz/
 - written in: TypeScript, Rust
+
+## darknet search engines
+
+useful to find other darknet git hosting services
+
+- ahmia: http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+- torch: http://xmh57jrknzkhv6y3ls3ubitzfqnkrwxhopf5aygthi7d6rplyvk3noyd.onion/
