@@ -12,7 +12,8 @@
 #### darktea
 
 - http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion
-- limitation: http 500 errors (internal server error) with high frequency
+- limitation: http 500 errors (internal server error) with low frequency &rarr; wait and retry
+   - the http 500 errors may be caused by gitea upgrades
 
 #### human rights tech
 
