@@ -30,6 +30,12 @@
 - http://git.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion
 - limitation: signup is broken. confirmation email is not sent. the signup page says "A new confirmation email has been sent to `xxx@xxx.onion`. Please check your inbox within the next 3 hours to complete the registration process." but the confirmation email never arrives.
 
+#### git.dotya.ml
+
+- http://2crftbzxbcoqolvzreaaeyrod5qwycayef55gxgzgfcpqlaxrnh3kkqd.onion
+- clearnet: https://git.dotya.ml
+- limitation: signup is broken.
+
 ### based on forgejo
 
 - forgejo is a FOSS fork of gitea
