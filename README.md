@@ -23,6 +23,9 @@
 
 - http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion
 - limitation: http 502 errors (bad gateway) with low frequency &rarr; wait and retry
+- meta repos
+   - [RightToPrivacy/Gitea-Onion](http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/RightToPrivacy/Gitea-Onion)
+   - [RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED](http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED)
 
 #### open privacy gitea
 
