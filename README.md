@@ -14,6 +14,10 @@
 - http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion
 - limitation: http 500 errors (internal server error) with low frequency &rarr; wait and retry
    - the http 500 errors may be caused by gitea upgrades
+- meta repos
+   - [Darktea/Rules](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Rules)
+   - [Darktea/Guides](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Guides)
+   - [Darktea/Issues_Support_Feedback](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Issues_Support_Feedback)
 
 #### human rights tech
 
