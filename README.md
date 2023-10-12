@@ -19,6 +19,18 @@
    - [Darktea/Guides](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Guides)
    - [Darktea/Issues_Support_Feedback](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Issues_Support_Feedback)
 
+```sh
+remote=darktea
+owner=some_owner
+repo=some_repo
+url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
+
+git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
+cd $repo
+git remote add $remote $url
+git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
+```
+
 #### right to privacy
 
 - http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion
@@ -27,6 +39,94 @@
 - meta repos
    - [RightToPrivacy/Gitea-Onion](http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/RightToPrivacy/Gitea-Onion)
    - [RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED](http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED)
+
+```sh
+remote=righttoprivacy
+owner=some_owner
+repo=some_repo
+url=http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/$owner/$repo
+
+git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
+cd $repo
+git remote rename origin $remote
+git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
+```
+
+## using tor-hidden git remotes
+
+clone a git repo from a tor-hidden remote:
+
+```sh
+remote=darktea
+owner=some_owner
+repo=some_repo
+url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
+
+git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
+cd $repo
+git remote rename origin $remote
+git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
+```
+
+add a tor-hidden remote to an existing git repo:
+
+```sh
+remote=darktea
+owner=some_owner
+repo=some_repo
+url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
+
+git remote add $remote $url
+git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
+```
+
+now `git pull` and `git fetch` and `git push` will use the tor socks5 proxy at `127.0.0.1:9050`
+
+```sh
+remote=darktea
+
+git pull $remote
+git fetch $remote
+git push $remote
+```
+
+the tor socks5 proxy at `127.0.0.1:9050` is started
+by `sudo systemctl start tor` on linux
+or `tor.exe --service start` on windows
+(youre an idiot if you still use windows, but well... addicts gonna addict)
+
+### example
+
+```sh
+cd $(mktemp -d)
+
+remote=darktea
+owner=milahu
+repo=darknet-git-hosting-services
+url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
+
+git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
+cd $repo
+git remote rename origin $remote
+git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
+```
+
+### git authentication
+
+to `$HOME/.gitconfig` add this section:
+
+```
+[credential]
+  # store all entered logins in $HOME/.git-credentials
+  helper = store
+```
+
+now git will ask for username and password only on your first access to a remote
+and store the login data in `$HOME/.git-credentials` for future use
+
+## broken services
+
+<details>
 
 #### open privacy gitea
 
@@ -104,6 +204,8 @@
 - https://github.com/radicle-dev/radicle-interface
 - https://app.radicle.xyz/
 - written in: TypeScript, Rust
+
+</details>
 
 ## darknet search engines
 
