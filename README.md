@@ -19,10 +19,11 @@
    - [Darktea/Guides](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Guides)
    - [Darktea/Issues_Support_Feedback](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Issues_Support_Feedback)
 
-#### human rights tech
+#### right to privacy
 
 - http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion
 - limitation: http 502 errors (bad gateway) with low frequency &rarr; wait and retry
+- aka "human rights tech". it was renamed to "right to privacy"
 - meta repos
    - [RightToPrivacy/Gitea-Onion](http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/RightToPrivacy/Gitea-Onion)
    - [RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED](http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED)
