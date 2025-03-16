@@ -23,8 +23,8 @@ dark gitea
 
 ```sh
 remote=darktea.onion
-owner=some_owner
-repo=some_repo
+owner=some_owner # $(id -un)
+repo=some_repo # $(basename "$PWD")
 url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
 
 git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
@@ -46,8 +46,8 @@ right to privacy
 
 ```sh
 remote=righttoprivacy.onion
-owner=some_owner
-repo=some_repo
+owner=some_owner # $(id -un)
+repo=some_repo # $(basename "$PWD")
 url=http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/$owner/$repo
 
 git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
@@ -62,8 +62,8 @@ clone a git repo from a tor-hidden remote:
 
 ```sh
 remote=darktea.onion
-owner=some_owner
-repo=some_repo
+owner=some_owner # $(id -un)
+repo=some_repo # $(basename "$PWD")
 url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
 
 git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
@@ -76,12 +76,34 @@ add a tor-hidden remote to an existing git repo:
 
 ```sh
 remote=darktea.onion
-owner=some_owner
-repo=some_repo
+owner=some_owner # $(id -un)
+repo=some_repo # $(basename "$PWD")
 url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
 
 git remote add $remote $url
 git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
+```
+
+add multiple tor-hidden remotes to an existing git repo:
+
+```sh
+owner=some_owner # $(id -un)
+repo=some_repo # $(basename "$PWD")
+
+function git_remote_add_onion() {
+  local remote="$1"
+  local url="$2"
+  git remote add "$remote" "$url"
+  git config --add remote."$remote".proxy socks5h://127.0.0.1:9050
+}
+
+remote=darktea.onion
+url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
+git_remote_add_onion "$remote" "$url"
+
+remote=righttoprivacy.onion
+url=http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/$owner/$repo
+git_remote_add_onion "$remote" "$url"
 ```
 
 now `git pull` and `git fetch` and `git push` will use the tor socks5 proxy at `127.0.0.1:9050`
