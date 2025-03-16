@@ -87,6 +87,8 @@ git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
 add multiple tor-hidden remotes to an existing git repo:
 
 ```sh
+#!/usr/bin/env bash
+
 owner=some_owner # $(id -un)
 repo=some_repo # $(basename "$PWD")
 
