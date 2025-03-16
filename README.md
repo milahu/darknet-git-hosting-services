@@ -9,7 +9,9 @@
 - written in: Go
 - forked from: [gogs](https://gogs.io/)
 
-#### darktea
+#### darktea.onion
+
+dark gitea
 
 - http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion
 - limitation: http 500 errors (internal server error) with low frequency &rarr; wait and retry
@@ -20,7 +22,7 @@
    - [Darktea/Issues_Support_Feedback](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Issues_Support_Feedback)
 
 ```sh
-remote=darktea
+remote=darktea.onion
 owner=some_owner
 repo=some_repo
 url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
@@ -31,7 +33,9 @@ git remote add $remote $url
 git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
 ```
 
-#### right to privacy
+#### righttoprivacy.onion
+
+right to privacy
 
 - http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion
 - limitation: http 502 errors (bad gateway) with low frequency &rarr; wait and retry
@@ -41,7 +45,7 @@ git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
    - [RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED](http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/RightToPrivacy/Gitea-Onion_WELCOME_GET_STARTED)
 
 ```sh
-remote=righttoprivacy
+remote=righttoprivacy.onion
 owner=some_owner
 repo=some_repo
 url=http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/$owner/$repo
@@ -57,7 +61,7 @@ git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
 clone a git repo from a tor-hidden remote:
 
 ```sh
-remote=darktea
+remote=darktea.onion
 owner=some_owner
 repo=some_repo
 url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
@@ -71,7 +75,7 @@ git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
 add a tor-hidden remote to an existing git repo:
 
 ```sh
-remote=darktea
+remote=darktea.onion
 owner=some_owner
 repo=some_repo
 url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
@@ -83,7 +87,7 @@ git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
 now `git pull` and `git fetch` and `git push` will use the tor socks5 proxy at `127.0.0.1:9050`
 
 ```sh
-remote=darktea
+remote=darktea.onion
 
 git pull $remote
 git fetch $remote
@@ -100,7 +104,7 @@ or `tor.exe --service start` on windows
 ```sh
 cd $(mktemp -d)
 
-remote=darktea
+remote=darktea.onion
 owner=milahu
 repo=darknet-git-hosting-services
 url=http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/$owner/$repo
