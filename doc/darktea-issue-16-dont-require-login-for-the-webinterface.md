@@ -22,11 +22,12 @@ assuming that the DDOS attacks (or webscraping) do not happen 100% of the time
 
 > dont require login for the webinterface
 
-the git interface is currently not affected by this
-`git clone` does not require authentication
-
-example:
+also the git interface requires authentication:
 
 ```
-git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone --depth=1 http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Issues_Support_Feedback
+$ cd $(mktemp -d)
+$ chmod 0777 .
+$ LANG=C sudo -u nobody git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone --depth=1 http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Issues_Support_Feedback
+Cloning into 'Issues_Support_Feedback'...
+Username for 'http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion': 
 ```

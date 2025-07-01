@@ -16,7 +16,7 @@ dark gitea
 - http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion
 - limitation: http 500 errors (internal server error) with low frequency &rarr; wait and retry
    - the http 500 errors may be caused by gitea upgrades
-- limitation: requires login for the webinterface. this is a desperate measure to fight DDOS attacks,
+- limitation: requires login for the webinterface and for the git interface. this is a desperate measure to fight DDOS attacks,
   because gitea does not-yet implement better DDOS protections. see also [doc/darktea-issue-16-dont-require-login-for-the-webinterface.md](doc/darktea-issue-16-dont-require-login-for-the-webinterface.md)
 - meta repos
    - [Darktea/Rules](http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/Darktea/Rules)
