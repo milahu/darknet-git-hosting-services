@@ -91,7 +91,17 @@ add multiple tor-hidden remotes to an existing git repo:
 ```sh
 #!/usr/bin/env bash
 
+# scripts/git-remote-add.sh
+
+set -eux
+
 owner=$(cat ~/.git-credentials | grep '@github\.com$' | sed -E 's|https://([^:]+):.*$|\1|')
+if [ -z "$owner" ]; then
+  echo "error: failed to parse repo owner from ~/.git-credentials"
+  exit 1
+fi
+
+cd "$(dirname "$0")/.."
 repo=$(basename "$PWD")
 
 function git_remote_add_onion() {
