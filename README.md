@@ -58,6 +58,27 @@ git remote rename origin $remote
 git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
 ```
 
+### based on gogs
+
+- https://github.com/gogs/gogs
+- written in: Go
+
+#### darkforest.onion
+
+- http://git.dkforestseeaaq2dqz2uflmlsybvnq2irzn4ygyvu53oazyorednviid.onion/
+
+```sh
+remote=darkforest.onion
+owner=$(cat ~/.git-credentials | grep '@github\.com$' | sed -E 's|https://([^:]+):.*$|\1|')
+repo=$(basename "$PWD")
+url=http://git.dkforestseeaaq2dqz2uflmlsybvnq2irzn4ygyvu53oazyorednviid.onion/$owner/$repo
+
+git -c remote.origin.proxy=socks5h://127.0.0.1:9050 clone $url
+cd $repo
+git remote rename origin $remote
+git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
+```
+
 ## using tor-hidden git remotes
 
 clone a git repo from a tor-hidden remote:
@@ -118,6 +139,10 @@ git_remote_add_onion "$remote" "$url"
 
 remote=righttoprivacy.onion
 url=http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/$owner/$repo
+git_remote_add_onion "$remote" "$url"
+
+remote=darkforest.onion
+url=http://git.dkforestseeaaq2dqz2uflmlsybvnq2irzn4ygyvu53oazyorednviid.onion/$owner/$repo
 git_remote_add_onion "$remote" "$url"
 ```
 
@@ -222,11 +247,6 @@ and store the login data in `$HOME/.git-credentials` for future use
 
 - https://github.com/mellowagain/gitarena
 - written in: Rust
-
-### based on gogs
-
-- https://github.com/gogs/gogs
-- written in: Go
 
 ### based on sourcehut
 
