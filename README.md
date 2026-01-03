@@ -58,6 +58,11 @@ git remote rename origin $remote
 git config --add remote.$remote.proxy socks5h://127.0.0.1:9050
 ```
 
+#### gdatura.onion
+
+- http://gdatura24gtdy23lxd7ht3xzx6mi7mdlkabpvuefhrjn4t5jduviw5ad.onion/
+- Git with a cup of Datura seeds. A painful, self-inflicted Nightmare
+
 ### based on gogs
 
 - https://github.com/gogs/gogs
